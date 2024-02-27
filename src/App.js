@@ -1,30 +1,27 @@
 
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './login';
 import Register from './register';
+import './App.css'; 
 
 function App() {
   return (
     <Router>
-     
-      <Navbar />
-
-      <div className="container d-flex justify-content-center align-items-center min-vh-100">
-        <div className="card shadow rounded-lg border-primary">
-          {/* Add a card header with title */}
-          <div className="card-header bg-primary text-white">
-            <h5 className="mb-0">Authentication</h5>
-          </div>
-
-        
+      <div className="d-flex-center min-vh-100">
+        <div className="card-custom shadow rounded-lg border-primary">
           <div className="card-body">
-            <Routes>
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
-            </Routes>
+            <Navbar />
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-8">
+                  <Routes>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                  </Routes>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -34,9 +31,8 @@ function App() {
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
       <div className="container-fluid">
-      
         <Link to="/" className="navbar-brand">Your App Name</Link>
         <button
           className="navbar-toggler"
@@ -69,5 +65,3 @@ function Navbar() {
 }
 
 export default App;
-
-
