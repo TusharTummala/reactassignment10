@@ -9,7 +9,7 @@ import Register from './register';
 function App() {
   return (
     <Router>
-      {/* Create a separate navigation bar component */}
+     
       <Navbar />
 
       <div className="container d-flex justify-content-center align-items-center min-vh-100">
@@ -19,7 +19,7 @@ function App() {
             <h5 className="mb-0">Authentication</h5>
           </div>
 
-          {/* Move the card content below the navbar */}
+        
           <div className="card-body">
             <Routes>
               <Route path="/login" element={<Login />} />
@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        {/* Add a brand name or logo */}
+      
         <Link to="/" className="navbar-brand">Your App Name</Link>
         <button
           className="navbar-toggler"
