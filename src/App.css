@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 .App {
@@ -15,6 +14,7 @@
 .navbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  min-height: 80px;
 }
 
 .navbar-brand,
@@ -43,6 +43,8 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  margin-top: 250px;
+  transform: scale(2);
 }
 
 .btn-primary,
@@ -89,4 +91,3 @@
   border: 1px solid #ccc;
   padding: 5px 10px;
 }
- 
